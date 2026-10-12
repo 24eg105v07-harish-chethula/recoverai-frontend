@@ -4,6 +4,7 @@ import axios from 'axios'
 // The production fallback is intentional; production code never calls localhost.
 const baseURL = (
   import.meta.env.VITE_API_BASE_URL ||
+  import.meta.env.VITE_API_URL ||
   'https://recoverai-backend-klo0.onrender.com'
 ).replace(/\/+$/, '')
 
